@@ -1,0 +1,165 @@
+/* =============== BANNER ============== */
+
+.banner-sobre {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-sobre img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =============== SOBRE A MARCA ============== */
+
+.sobre-marca {
+  background: #FAFAF8;
+}
+
+.img-sobre {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+}
+
+.sobre-marca p {
+  color: #2F2F2F;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.sobre-marca strong {
+  font-weight: 600;
+}
+
+
+/* =============== PROPÓSITO ============== */
+
+.secao-proposito{
+  background:#FAFAF8;
+}
+
+/* Título */
+.titulo-proposito{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  color:#2F2F2F;
+}
+
+/* CARD */
+.card-proposito{
+  background:#FAFAF8;
+  padding:28px 24px;
+  border-radius:18px;
+  border:2px solid #2F2F2F;
+  height:100%;
+  text-align:center;
+  transition:.25s ease;
+}
+
+.card-proposito:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* TITULO */
+.card-proposito h4{
+  font-family:"Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  margin-bottom:12px;
+  color:#2F2F2F;
+}
+
+/* TEXTO */
+.card-proposito p{
+  font-family:"Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height:1.6;
+  color:#555;
+  margin:0;
+}
+
+
+/* =============== INSTAGRAM ============== */
+
+.secao-instagram-destaque{
+  background:#e9e2db;
+}
+
+/* título */
+.titulo-instagram{
+  font-family:"Cormorant Garamond", serif;
+  font-size:34px;
+  color:#2F2F2F;
+}
+
+/* controla o tamanho do reels */
+.reels-wrapper{
+  max-width:420px;  
+  margin:0 auto;
+}
+
+
+.reels-wrapper .instagram-media{
+  width:100% !important;
+  min-width:100% !important;
+  max-width:100% !important;
+  margin:0 auto !important;
+}
+
+/* iframe interno */
+.reels-wrapper iframe{
+  width:100% !important;
+}
+
+/* ================= SECTION VER CATALOGO ================= */
+
+.secao-catalogo {
+  background-color: #D2A6B1;
+  padding: 50px 0;
+}
+
+.texto-catalogo {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #2F2F2F;
+}
+
+.btn-catalogo {
+  border: 2px solid #4A1F2A;
+  color: #4A1F2A;
+  padding: 8px 25px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: transparent;
+  transition: 0.3s ease;
+}
+
+.btn-catalogo:hover {
+  background-color: #4A1F2A;
+  color: #fff;
+}
+
+
+/* =============== OUTRAS TELAS ============== */
+
+@media(min-width:992px){
+  .secao-proposito .row > div:nth-child(4){
+    margin-left:auto;
+  }
+  .secao-proposito .row > div:nth-child(5){
+    margin-right:auto;
+  }
+}
+
+@media(max-width:575px){
+  .reels-wrapper{
+    max-width:340px;
+  }
+}

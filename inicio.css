@@ -1,0 +1,664 @@
+/* ================= CAROUSEL ================= */
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ================= SECTION INFERIOR ================= */
+
+.info-section {
+  background-color: #F2E8E1;
+  padding: 60px 0 !important;
+}
+
+.info-section h1 {
+  font-family: serif;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.btn-outline-custom {
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #4A1F2A;
+  color: #4A1F2A;
+  background-color: transparent;
+  padding: 10px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: #4A1F2A;
+  color: #FAFAF8;
+  transform: translateY(-2px);
+}
+
+.btn-outline-custom:active {
+  transform: translateY(0);
+}
+
+/* ================= SECTION HISTORIA ================= */
+
+.historia-section {
+  background-color: #4A1F2A; /* vinho */
+  padding: 100px 0;
+  color: #F2E8E1;
+}
+
+
+.video-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-historia {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Texto */
+
+.titulo-historia {
+  font-family: "Cormorant Garamond", serif;
+  color: #F2E8E1;
+  margin-bottom: 10px;
+}
+
+.paragrafo-historia {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  color: #F2E8E1;
+  margin-bottom: 25px;
+}
+
+/* Botão */
+
+.btn-historia {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  border: 2px solid #F2E8E1;
+  color: #F2E8E1;
+  padding: 10px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.2s ease;
+}
+
+.btn-historia:hover {
+  background-color: #F2E8E1;
+  color: #4A1F2A;
+  transform: translateY(-2px);
+}
+
+/* ================= PRODUTOS ================= */
+
+/* FUNDO DA SEÇÃO */
+.secao-bolsas {
+  background-color: #f6f6f6;
+}
+
+/* TÍTULO */
+.titulo-bolsas {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* CARD */
+.card-produto {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.card-produto:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGEM */
+.card-img-top {
+  padding: 0px;
+  height: 250px;
+  object-fit: contain;
+}
+
+/* TÍTULO PRODUTO */
+.card-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  color: #2F2F2F;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* INFO PRODUTO */
+.info-produto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #2F2F2F;
+}
+
+.preco {
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* BOTÕES */
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+
+.btn-detalhes,
+.btn-comprar {
+  font-family: "Montserrat", sans-serif;
+  width: 119px;
+  height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+
+  display: flex;              /* faz funcionar */
+  align-items: center;        /* centraliza vertical */
+  justify-content: center;    /* centraliza horizontal */
+}
+
+/* DETALHES */
+.btn-detalhes {
+  border: 2px solid #4A1F2A;
+  color: #4A1F2A;
+  background: transparent;
+}
+
+.btn-detalhes:hover {
+  background-color: #4A1F2A;
+  color: #fff;
+}
+
+/* COMPRAR */
+.btn-comprar {
+  background-color: #4A1F2A;
+  color: #fff;
+}
+
+.btn-comprar:hover {
+  opacity: 0.9;
+}
+
+/* VER MAIS */
+.btn-ver-mais {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.btn-ver-mais::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+  transition: 0.3s ease;
+}
+
+.btn-ver-mais:hover {
+  color: #6B1229;
+}
+
+.btn-ver-mais:hover::after {
+  height: 2px;
+  background-color: #6B1229;
+}
+
+
+/* ================= DESTAQUE ================= */
+
+
+.secao-destaque {
+  background-color: #6B1E2A;
+  color: #F2E8E1;
+}
+
+/* ===== VÍDEO ===== */
+
+.video-destaque {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ===== COLUNA DIREITA ===== */
+
+.conteudo-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* ===== IMAGENS DAS BOLSAS ===== */
+
+.secao-destaque {
+  background-color: #6B1E2A;
+  color: #F2E8E1;
+}
+
+/* ===== VÍDEO ===== */
+
+.video-destaque {
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ===== COLUNA DIREITA ===== */
+
+.conteudo-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%;
+}
+
+/* ===== IMAGENS NO TOPO ===== */
+
+.secao-destaque {
+  background-color: #6B1E2A;
+}
+
+/* Vídeo ocupa toda altura da coluna */
+.video-destaque {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* ESSA É A PARTE QUE FAZ FUNCIONAR */
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Bolsas no topo */
+.topo-bolsas {
+  display: flex;
+  gap: 20px;
+}
+
+.topo-bolsas img {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Texto embaixo */
+.bottom-texto {
+  margin-top: auto; 
+}
+
+/* ================= SECTION ESTILO ================= */
+
+.secao-estilos {
+  background-color: #f4f4f4;
+}
+
+/* TÍTULO */
+.titulo-estilos {
+  font-family: "Cormorant Garamond", serif;
+  color: #2F2F2F;
+}
+
+/* CARD */
+.card-estilo {
+  background-color: #E8DDD7;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  padding: 0;
+  max-width: 995px;
+}
+
+.card-estilo.esquerda {
+  margin-right: auto;
+}
+
+.card-estilo.direita {
+  margin-left: auto;
+}
+
+/* IMAGEM */
+.img-estilo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTEÚDO */
+.conteudo-estilo {
+  padding: 35px;
+}
+
+.conteudo-estilo h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #3A2E2A;
+}
+
+.conteudo-estilo p {
+  font-size: 0.90rem;
+  line-height: 1.6;
+  color: #4A4A4A;
+  margin-bottom: 20px;
+}
+
+/* BOTÃO */
+.btn-estilo {
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 2px solid #6B1229;
+  color: #6B1229;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.btn-estilo:hover {
+  background-color: #6B1229;
+  color: #fff;
+}
+
+/* ================= SECTION INSTAGRAM ================= */
+
+.secao-instagram {
+  background-color: #e9e2db;
+}
+
+.card-instagram {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.secao-instagram {
+  background-color: #e9e2db;
+}
+
+.card-instagram {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.card-instagram .instagram-media {
+  margin: 0 auto !important;
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.card-instagram iframe {
+  width: 100% !important;
+}
+
+.text-ver-mais {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.link-insta {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #333;
+
+}
+
+
+/* ================= SECTION VER CATALOGO ================= */
+
+.secao-catalogo {
+  background-color: #D2A6B1;
+  padding: 50px 0;
+}
+
+.texto-catalogo {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #2F2F2F;
+}
+
+.btn-catalogo {
+  border: 2px solid #4A1F2A;
+  color: #4A1F2A;
+  padding: 8px 25px;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: transparent;
+  transition: 0.3s ease;
+}
+
+.btn-catalogo:hover {
+  background-color: #4A1F2A;
+  color: #fff;
+}
+
+/* ================= SECTION FAQ ================= */
+
+.secao-faq {
+  background-color: #FAFAF8;
+}
+
+.titulo-faq {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  color: #2F2F2F;
+}
+
+.faq-accordion .accordion-item {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.faq-accordion .accordion-button {
+  background-color: #D2A6B1;
+  color: #2F2F2F;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background-color: #D2A6B1;
+  color: #2F2F2F;
+}
+
+.faq-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-body {
+  background-color: #F2E8E1;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.entregas-whatsapp {
+  background-color: #FAFAF8;
+}
+
+.entregas-whatsapp h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.entregas-whatsapp p {
+  max-width: 750px;
+  margin: 0 auto 20px auto;
+  color: #555;
+}
+
+.box-info {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.box-info h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.box-info ul {
+  padding-left: 18px;
+}
+
+.box-info li {
+  margin-bottom: 8px;
+  color: #2F2F2F;
+}
+
+/* ===== OUTRAS TELAS ===== */
+
+@media (max-width: 991px) {
+
+  .coluna-direita {
+    text-align: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .topo-bolsas {
+    justify-content: center;
+  }
+
+  .bottom-texto {
+    align-self: center;
+  }
+
+  .topo-bolsas img {
+    min-width: 130px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .info-produto {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .secao-bolsas .col-12 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-produto {
+    max-width: 320px; /* ajuste aqui se quiser menor ou maior */
+    width: 100%;
+  }
+
+  .preco {
+    margin-top: 5px;
+  }
+
+    .card-estilo .row {
+    flex-direction: column;
+  }
+
+  .img-estilo {
+    height: 500px;
+  }
+
+  .conteudo-estilo {
+    padding: 25px;
+    text-align: center;
+  }
+
+    .card-estilo {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+}
+
+/* Entre 501px e 767px → 2 por linha */
+@media (min-width: 501px) and (max-width: 767px) {
+  .produto-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .insta-col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  #heroCarousel img {
+    max-height: 450px;
+    object-fit: cover;
+  }
+}
+
+/* Até 500px → 1 por linha */
+@media (max-width: 500px) {
+  .produto-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .insta-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

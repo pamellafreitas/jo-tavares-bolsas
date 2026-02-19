@@ -1,0 +1,159 @@
+.pagina-produto{
+  padding:40px 0;
+}
+
+.breadcrumb-produto{
+  background:#f1e7e3;
+  padding:12px 20px;
+  border-radius:8px;
+  margin-bottom:20px;
+  font-size:14px;
+}
+
+.btn-voltar{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border:2px solid #4A1F2A;
+  padding:10px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  color:#4A1F2A;
+  margin-bottom:40px;
+  font-weight:500;
+}
+
+.produto-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:60px;
+}
+
+.imagem-principal img,
+.imagem-principal video{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.miniaturas{
+  display:flex;
+  gap:12px;
+  margin-top:15px;
+  overflow-x:auto;         
+  padding-bottom:5px;
+}
+
+.miniaturas::-webkit-scrollbar{
+  height:6px;
+}
+
+.miniaturas::-webkit-scrollbar-thumb{
+  background:#ccc;
+  border-radius:10px;
+}
+
+.miniatura{
+  min-width:80px;           /* 🔥 impede de encolher */
+  height:80px;
+  object-fit:cover;
+  border-radius:8px;
+  cursor:pointer;
+  border:2px solid transparent;
+  flex-shrink:0;            /* 🔥 impede compressão */
+}
+
+.miniatura.ativa{
+  border-color:#4A1F2A;
+}
+
+.info-produto{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+.preco{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cores {
+  font-weight: 200;
+}
+
+.descricao-curta{
+  margin-bottom: 16px;
+  max-width: 400px;
+}
+
+.btn-whatsapp{
+  background:#4A1F2A;
+  color:#fff;
+  border:none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor:pointer;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.entrega{
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.descricao-produto{
+  padding: 10px 0;
+}
+
+/* ================= SECTION INSTAGRAM ================= */
+
+.secao-instagram {
+  background-color: #4A1F2A;
+}
+
+.titulo-instagram, .text-ver-mais {
+  color: #FAFAF8;
+}
+
+.card-instagram {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-instagram {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.card-instagram .instagram-media {
+  margin: 0 auto !important;
+  min-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.card-instagram iframe {
+  width: 100% !important;
+}
+
+.text-ver-mais {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.link-insta {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #FAFAF8;
+
+}

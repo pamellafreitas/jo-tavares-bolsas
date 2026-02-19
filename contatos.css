@@ -1,0 +1,134 @@
+/* =============== BANNER ============== */
+
+.banner-contatos {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-contatos img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =============== CONTATOS ============== */
+
+/* SECTION */
+.contato-cta {
+  background: #FAFAF8;
+  padding: 80px 0;
+}
+
+/* caixa vinho */
+.cta-box {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* titulo vinho */
+.cta-title {
+  background: #4A1F2A;
+  color: #fff;
+  padding: 18px 30px;
+  border-radius: 10px;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+/* texto */
+.cta-text {
+  color: #5c5c5c;
+  font-size: 17px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* botoes */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* botao */
+.cta-btn {
+  display: inline-flex; /* inline-flex evita quebra de layout */
+  align-items: center;
+  justify-content: center; /* centraliza texto e ícone */
+  gap: 14px;
+
+  border: 2px solid #4A1F2A;
+  color: #4A1F2A;
+  text-decoration: none;
+
+  padding: 14px 24px;
+  border-radius: 10px;
+  min-width: 240px;
+
+  font-weight: 500;
+  transition: all 0.3s ease;
+  overflow: visible; /* garante que o ícone nunca seja cortado */
+  position: relative;
+}
+
+/* hover elegante */
+.cta-btn:hover {
+  background: #4A1F2A;
+  color: #fff;
+}
+
+/* ícone */
+.cta-icon {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* garante que fique acima do texto */
+}
+
+
+.cta-btn:hover svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.link-insta {
+  margin-top: 50px !important;
+}
+
+.cta-btn svg path {
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.cta-btn:hover svg path {
+  fill: #fff !important;
+  stroke: #fff !important;
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+
+  .cta-title {
+    font-size: 20px;
+    padding: 14px 18px;
+  }
+
+  .cta-text {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    justify-content: space-between; 
+  }
+
+  .cta-buttons {
+    gap: 14px;
+  }
+}

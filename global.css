@@ -1,0 +1,172 @@
+/* ================= NAVBAR ================= */
+
+.bg-custom {
+  background-color: #F2E8E1;
+}
+
+.navbar-brand img{
+  width: 130px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.nav-item {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 30px;
+  color: #4A4A4A;
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  color: #4A4A4A;
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: #4A1F2A !important;
+}
+
+.social-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4A4A4A;
+  display: block;
+}
+
+/* =========================
+   FOOTER JÓ TAVARES
+========================= */
+
+.footer-jo {
+  background-color: #F2E8E1;
+  padding: 60px 0;
+  font-family: "Montserrat", sans-serif;
+  color: #2F2F2F;
+}
+
+/* Títulos */
+.footer-titulo {
+  font-weight: 600;
+  margin-bottom: 18px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* Logo */
+
+.footer-logo img {
+  width: 200px;
+}
+/* Links institucionais */
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #2F2F2F;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Contato */
+.footer-jo p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Redes sociais */
+.redes-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.icon-social {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-social:hover {
+  transform: translateY(-4px);
+  opacity: 0.75;
+}
+
+/* ================= TEXTOS ================= */
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #2F2F2F;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: #2F2F2F;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.95rem, 2.5vw, 1.125rem);
+  color: #4A4A4A;
+  line-height: 1.6;
+}
+
+section {
+  padding: 90px 0;
+}
+
+
+/* MOBILE */
+@media (max-width: 991.98px){
+
+  /* links alinhados à esquerda */
+  .navbar-nav{
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .navbar-nav .nav-link{
+    padding: 10px 0;
+  }
+
+  /* redes sociais */
+  .social-icons, .social-title{
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .social-icons {
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+
+  /* remove centralização do flex */
+  .social-icons .d-flex{
+    justify-content: flex-start !important;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 0;
+  }
+}

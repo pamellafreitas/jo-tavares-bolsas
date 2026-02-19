@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jó Tavares Bolsas - Nossos Contatos</title>
+
+    <link rel="icon" type="image/png" href="img/icon-jo.png">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="Sobre.css">
+  <link rel="stylesheet" href="contatos.css">
+  <link rel="stylesheet" href="inicio.css">
+
+  <!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-custom">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="img/logo-jo-tavares-bolsas.png" alt="logo Jô Taveres Bolsas">
+    </a>
+
+    <!-- Botão mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="menu">
+
+      <!-- Links -->
+      <ul class="navbar-nav mx-auto  mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">Catálogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="Contatos.html">Contato</a>
+        </li>
+      </ul>
+
+      <!-- Redes sociais -->
+      <div class="social-icons text-center">
+        <span class="social-title">Redes Sociais</span>
+        <div class="d-flex justify-content-center gap-3 mt-1">
+          <a href="https://www.instagram.com/jotavaresbolsas/" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 6.5H17.51" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+          </a>
+          <a href="https://wa.me/65993073682" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6 14C16.4 13.9 15.1 13.3 14.9 13.2C14.7 13.1 14.5 13.1 14.3 13.3C14.1 13.5 13.7 14.1 13.5 14.3C13.4 14.5 13.2 14.5 13 14.4C12.3 14.1 11.6 13.7 11 13.2C10.5 12.7 10 12.1 9.6 11.5C9.5 11.3 9.6 11.1 9.7 11C9.8 10.9 9.9 10.7 10.1 10.6C10.2 10.5 10.3 10.3 10.3 10.2C10.4 10.1 10.4 9.89998 10.3 9.79998C10.2 9.69998 9.7 8.49998 9.5 7.99998C9.4 7.29998 9.2 7.29998 9 7.29998C8.9 7.29998 8.7 7.29998 8.5 7.29998C8.3 7.29998 8 7.49998 7.9 7.59998C7.3 8.19998 7 8.89998 7 9.69998C7.1 10.6 7.4 11.5 8 12.3C9.1 13.9 10.5 15.2 12.2 16C12.7 16.2 13.1 16.4 13.6 16.5C14.1 16.7 14.6 16.7 15.2 16.6C15.9 16.5 16.5 16 16.9 15.4C17.1 15 17.1 14.6 17 14.2C17 14.2 16.8 14.1 16.6 14ZM19.1 4.89998C15.2 0.999976 8.9 0.999976 5 4.89998C1.8 8.09998 1.2 13 3.4 16.9L2 22L7.3 20.6C8.8 21.4 10.4 21.8 12 21.8C17.5 21.8 21.9 17.4 21.9 11.9C22 9.29997 20.9 6.79998 19.1 4.89998ZM16.4 18.9C15.1 19.7 13.6 20.2 12 20.2C10.5 20.2 9.1 19.8 7.8 19.1L7.5 18.9L4.4 19.7L5.2 16.7L5 16.4C2.6 12.4 3.8 7.39998 7.7 4.89998C11.6 2.39998 16.6 3.69998 19 7.49998C21.4 11.4 20.3 16.5 16.4 18.9Z" fill="#4A4A4A"/>
+            </svg>
+
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+<!-- ================= SECTION BANNER ================= -->
+
+<section class="banner-contatos">
+  <picture>
+    <!-- imagem mobile -->
+    <source media="(max-width: 768px)" srcset="img/banner-contatos-pq.png">
+
+    <!-- imagem desktop -->
+    <img src="img/banner-contatos.png" alt="Jó Tavares Bolsas">
+  </picture>
+</section>
+
+<!-- ================= SECTION CONTATOS ================= -->
+
+<section class="contato-cta">
+  <div class="container">
+
+    <div class="cta-box text-center">
+      <h2 class="cta-title">
+        Entre em contato com a loja Jô Tavares Bolsas
+      </h2>
+
+      <p class="cta-text">
+        Estamos à disposição para tirar dúvidas, ajudar na sua compra ou falar
+        sobre nossos produtos.
+      </p>
+
+      <div class="cta-buttons">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5565993073682"
+           target="_blank"
+           class="cta-btn whatsapp-btn">
+          <span>Falar no WhatsApp</span>
+          <span class="cta-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.6 14C16.4 13.9 15.1 13.3 14.9 13.2C14.7 13.1 14.5 13.1 14.3 13.3C14.1 13.5 13.7 14.1 13.5 14.3C13.4 14.5 13.2 14.5 13 14.4C12.3 14.1 11.6 13.7 11 13.2C10.5 12.7 10 12.1 9.6 11.5C9.5 11.3 9.6 11.1 9.7 11C9.8 10.9 9.9 10.7 10.1 10.6C10.2 10.5 10.3 10.3 10.3 10.2C10.4 10.1 10.4 9.90001 10.3 9.80001C10.2 9.70001 9.7 8.50001 9.5 8.00001C9.4 7.30001 9.2 7.30001 9 7.30001C8.9 7.30001 8.7 7.30001 8.5 7.30001C8.3 7.30001 8 7.50001 7.9 7.60001C7.3 8.20001 7 8.90001 7 9.70001C7.1 10.6 7.4 11.5 8 12.3C9.1 13.9 10.5 15.2 12.2 16C12.7 16.2 13.1 16.4 13.6 16.5C14.1 16.7 14.6 16.7 15.2 16.6C15.9 16.5 16.5 16 16.9 15.4C17.1 15 17.1 14.6 17 14.2C17 14.2 16.8 14.1 16.6 14ZM19.1 4.90001C15.2 1.00001 8.9 1.00001 5 4.90001C1.8 8.10001 1.2 13 3.4 16.9L2 22L7.3 20.6C8.8 21.4 10.4 21.8 12 21.8C17.5 21.8 21.9 17.4 21.9 11.9C22 9.30001 20.9 6.80001 19.1 4.90001ZM16.4 18.9C15.1 19.7 13.6 20.2 12 20.2C10.5 20.2 9.1 19.8 7.8 19.1L7.5 18.9L4.4 19.7L5.2 16.7L5 16.4C2.6 12.4 3.8 7.40001 7.7 4.90001C11.6 2.40001 16.6 3.70001 19 7.50001C21.4 11.4 20.3 16.5 16.4 18.9Z" fill="#4A1F2A"/>
+              </svg>
+
+          </span>
+        </a>
+
+        <!-- Email -->
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contatojoselice@gmail.com&su=Contato%20pelo%20site%20Jô%20Tavares%20Bolsas&body=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+        target="_blank"
+        class="cta-btn whatsapp-btn">
+        <span>Enviar E-mail</span>
+        <span class="cta-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.9412 5.17318C23.8415 4.66909 23.6166 4.19265 23.2884 3.7921C23.2218 3.70801 23.1521 3.63319 23.0759 3.5573C22.4921 2.97043 21.68 2.63382 20.8478 2.63382H3.15206C2.31061 2.63382 1.51922 2.96194 0.923672 3.55763C0.848297 3.63282 0.778406 3.70838 0.709219 3.79515C0.3825 4.19401 0.158578 4.66979 0.0612187 5.17459C0.0205313 5.37282 0 5.57823 0 5.78602V18.2143C0 18.6467 0.0878438 19.0677 0.261984 19.468C0.412688 19.8234 0.641344 20.1604 0.923484 20.4424C0.994547 20.5132 1.06514 20.5784 1.14052 20.642C1.70461 21.1092 2.41889 21.3662 3.15206 21.3662H20.8478C21.5858 21.3662 22.2993 21.1082 22.8619 20.6369C22.9371 20.576 23.0068 20.5121 23.0765 20.4424C23.3492 20.17 23.566 19.857 23.7218 19.5118L23.7423 19.4626C23.9132 19.0699 24 18.6502 24 18.2144V5.78602C24 5.58094 23.9802 5.37418 23.9412 5.17318ZM1.63233 4.64551C1.67691 4.58026 1.73381 4.51327 1.80642 4.4401C2.16684 4.07987 2.64483 3.88163 3.15202 3.88163H20.8478C21.3594 3.88163 21.8376 4.08019 22.194 4.4408C22.2555 4.50301 22.3143 4.57205 22.3656 4.64105L22.5009 4.82293L13.0556 13.0549C12.7644 13.3102 12.3895 13.4507 11.9999 13.4507C11.614 13.4507 11.2395 13.3105 10.9448 13.0553L1.50891 4.82527L1.63233 4.64551ZM1.25414 18.3241C1.24903 18.2902 1.24786 18.2526 1.24786 18.2143V6.04337L8.5777 12.4376L1.32183 18.7639L1.25414 18.3241ZM21.7921 19.8675C21.5085 20.0312 21.1817 20.118 20.8478 20.118H3.15206C2.81798 20.118 2.49141 20.0312 2.20791 19.8675L1.91128 19.6956L9.40828 13.1622L10.2299 13.8768C10.7228 14.3047 11.3512 14.5406 12 14.5406C12.651 14.5406 13.2806 14.3047 13.7731 13.8768L14.5944 13.1619L22.0888 19.6959L21.7921 19.8675ZM22.7518 18.2143C22.7518 18.252 22.7511 18.2892 22.7464 18.3223L22.6814 18.7663L15.4224 12.4411L22.7518 6.04646V18.2143Z" fill="#4A1F2A" stroke="#4A1F2A" stroke-width="0.00064"/>
+        </svg>
+
+        </span>
+      </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECTION INSTAGRAM ================= -->
+
+<section class="secao-instagram-destaque">
+  <div class="container text-center">
+
+    <h2 class="titulo-instagram mb-2">
+      Conheça o nosso instagram
+    </h2>
+    <p class="mb-5">@jotavaresbolsas</p>
+
+    <div class="reels-wrapper">
+      <blockquote
+        class="instagram-media"
+        data-instgrm-permalink="https://www.instagram.com/p/DMmNHxIM8lp/"
+        data-instgrm-version="14">
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECTION VER CATALOGO ================= -->
+
+<section class="secao-catalogo">
+  <div class="container">
+
+    <div class="row align-items-center text-center text-md-start">
+
+      <!-- TEXTO -->
+      <div class="col-12 col-md-8 mb-3 mb-md-0">
+        <p class="texto-catalogo mb-0">
+          Veja nosso catálogo completo de bolsas femininas
+        </p>
+      </div>
+
+      <!-- BOTÃO -->
+      <div class="col-12 col-md-4 text-center text-md-end">
+        <a href="catalogo.html" class="btn btn-catalogo">
+          CATÁLOGO
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECTION FAQ ================= -->
+
+<section class="secao-faq">
+  <div class="container">
+
+    <h2 class="titulo-faq text-center mb-5">
+      Perguntas Frequentes
+    </h2>
+
+    <div class="accordion faq-accordion" id="faqAccordion">
+
+      <!-- ITEM 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq1">
+            1. As bolsas são de couro legítimo?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sim. Todas as bolsas Jó Tavares são produzidas em couro legítimo de alta qualidade,
+            selecionado para garantir durabilidade, acabamento refinado e sofisticação em cada peça.
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq2">
+            2. Vocês entregam para todo o Brasil?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sim, realizamos entregas para todo o território nacional com segurança e agilidade.
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq3">
+            3. Como funciona a compra das bolsas?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            As compras são realizadas diretamente pelo nosso WhatsApp. Basta escolher o modelo desejado e entrar em contato para receber atendimento personalizado e finalizar seu pedido com segurança.
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq4">
+            4. O acabamento das bolsas é realmente diferenciado?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sim. Cada peça é cuidadosamente produzida com atenção aos detalhes,
+            garantindo sofisticação e exclusividade.
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq5">
+            5. A bolsa é resistente ao uso diário?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sim. As bolsas são desenvolvidas para uso diário, unindo resistência,
+            conforto e elegância.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECTION FOOTER ================= -->
+
+<footer class="footer-jo">
+  <div class="container">
+    <div class="row text-center text-md-left">
+
+      <!-- LOGO -->
+      <div class="col-12 col-md-3 mb-4 mb-md-0">
+        <div class="footer-logo">
+          <div class="mb-2">
+            <img src="img/logo-jo-tavares-bolsas.png" alt="Jô Tavares Bolsas">
+          </div>
+        </div>
+      </div>
+
+      <!-- INSTITUCIONAL -->
+      <div class="col-12 col-md-3 mb-4 mb-md-0">
+        <h5 class="footer-titulo">Institucional</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="catalogo.html">Catálogo de bolsas</a></li>
+          <li><a href="Sobre.html">Sobre a empresa</a></li>
+          <li><a href="Contatos.html">Tire suas dúvidas</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTATO -->
+      <div class="col-12 col-md-3 mb-4 mb-md-0">
+        <h5 class="footer-titulo">Contato</h5>
+        <p><strong>Telefones:</strong> (65) 99307-3682</p>
+        <p><strong>E-mail:</strong> contatojoselice@gmail.com</p>
+      </div>
+
+      <!-- REDES SOCIAIS -->
+      <div class="col-12 col-md-3">
+        <h5 class="footer-titulo">Redes Sociais</h5>
+
+        <div class="redes-icons">
+
+          <a href="https://www.instagram.com/jotavaresbolsas/" class="icon-social" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 11.3703C16.1234 12.2025 15.9812 13.0525 15.5937 13.7993C15.2062 14.5461 14.5931 15.1517 13.8416 15.53C13.0901 15.9082 12.2384 16.0399 11.4077 15.9062C10.5771 15.7726 9.80971 15.3804 9.21479 14.7855C8.61987 14.1905 8.22768 13.4232 8.09402 12.5925C7.96035 11.7619 8.09202 10.9102 8.47028 10.1587C8.84854 9.40716 9.45414 8.79404 10.2009 8.40654C10.9477 8.01904 11.7977 7.87689 12.63 8.0003C13.4789 8.12619 14.2648 8.52176 14.8716 9.12861C15.4785 9.73545 15.8741 10.5214 16 11.3703Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 6.5H17.51" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+          </a>
+
+          <a href="https://wa.me/65993073682" class="icon-social" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6 13.9996C16.4 13.8996 15.1 13.2996 14.9 13.1996C14.7 13.0996 14.5 13.0996 14.3 13.2996C14.1 13.4996 13.7 14.0996 13.5 14.2996C13.4 14.4996 13.2 14.4996 13 14.3996C12.3 14.0996 11.6 13.6996 11 13.1996C10.5 12.6996 10 12.0996 9.6 11.4996C9.5 11.2996 9.6 11.0996 9.7 10.9996C9.8 10.8996 9.9 10.6996 10.1 10.5996C10.2 10.4996 10.3 10.2996 10.3 10.1996C10.4 10.0996 10.4 9.89961 10.3 9.79961C10.2 9.69961 9.7 8.49961 9.5 7.99961C9.4 7.29961 9.2 7.29961 9 7.29961C8.9 7.29961 8.7 7.29961 8.5 7.29961C8.3 7.29961 8 7.49961 7.9 7.59961C7.3 8.19961 7 8.89961 7 9.69961C7.1 10.5996 7.4 11.4996 8 12.2996C9.1 13.8996 10.5 15.1996 12.2 15.9996C12.7 16.1996 13.1 16.3996 13.6 16.4996C14.1 16.6996 14.6 16.6996 15.2 16.5996C15.9 16.4996 16.5 15.9996 16.9 15.3996C17.1 14.9996 17.1 14.5996 17 14.1996C17 14.1996 16.8 14.0996 16.6 13.9996ZM19.1 4.89961C15.2 0.999609 8.9 0.999609 5 4.89961C1.8 8.09961 1.2 12.9996 3.4 16.8996L2 21.9996L7.3 20.5996C8.8 21.3996 10.4 21.7996 12 21.7996C17.5 21.7996 21.9 17.3996 21.9 11.8996C22 9.29961 20.9 6.79961 19.1 4.89961ZM16.4 18.8996C15.1 19.6996 13.6 20.1996 12 20.1996C10.5 20.1996 9.1 19.7996 7.8 19.0996L7.5 18.8996L4.4 19.6996L5.2 16.6996L5 16.3996C2.6 12.3996 3.8 7.39961 7.7 4.89961C11.6 2.39961 16.6 3.69961 19 7.49961C21.4 11.3996 20.3 16.4996 16.4 18.8996Z" fill="#4A4A4A"/>
+</svg>
+
+          </a>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- script obrigatório -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- script obrigatório -->
+<script async src="//www.instagram.com/embed.js"></script>
+
+</body>
+</html>
+

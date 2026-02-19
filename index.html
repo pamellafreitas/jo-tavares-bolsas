@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jó Tavares Bolsas</title>
+
+  <link rel="icon" type="image/png" href="img/icon-jo.png">
+
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="inicio.css">
+  <link rel="stylesheet" href="catalogo.css">
+
+  <!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-custom">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="img/logo-jo-tavares-bolsas.png" alt="logo Jô Taveres Bolsas">
+    </a>
+
+    <!-- Botão mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="menu">
+
+      <!-- Links -->
+      <ul class="navbar-nav mx-auto  mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">Catálogo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contatos.html">Contato</a>
+        </li>
+      </ul>
+
+      <!-- Redes sociais -->
+      <div class="social-icons text-center">
+        <span class="social-title">Redes Sociais</span>
+        <div class="d-flex justify-content-center gap-3 mt-1">
+          <a href="https://www.instagram.com/jotavaresbolsas/" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 6.5H17.51" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+          </a>
+          <a href="https://wa.me/65993073682" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6 14C16.4 13.9 15.1 13.3 14.9 13.2C14.7 13.1 14.5 13.1 14.3 13.3C14.1 13.5 13.7 14.1 13.5 14.3C13.4 14.5 13.2 14.5 13 14.4C12.3 14.1 11.6 13.7 11 13.2C10.5 12.7 10 12.1 9.6 11.5C9.5 11.3 9.6 11.1 9.7 11C9.8 10.9 9.9 10.7 10.1 10.6C10.2 10.5 10.3 10.3 10.3 10.2C10.4 10.1 10.4 9.89998 10.3 9.79998C10.2 9.69998 9.7 8.49998 9.5 7.99998C9.4 7.29998 9.2 7.29998 9 7.29998C8.9 7.29998 8.7 7.29998 8.5 7.29998C8.3 7.29998 8 7.49998 7.9 7.59998C7.3 8.19998 7 8.89998 7 9.69998C7.1 10.6 7.4 11.5 8 12.3C9.1 13.9 10.5 15.2 12.2 16C12.7 16.2 13.1 16.4 13.6 16.5C14.1 16.7 14.6 16.7 15.2 16.6C15.9 16.5 16.5 16 16.9 15.4C17.1 15 17.1 14.6 17 14.2C17 14.2 16.8 14.1 16.6 14ZM19.1 4.89998C15.2 0.999976 8.9 0.999976 5 4.89998C1.8 8.09998 1.2 13 3.4 16.9L2 22L7.3 20.6C8.8 21.4 10.4 21.8 12 21.8C17.5 21.8 21.9 17.4 21.9 11.9C22 9.29997 20.9 6.79998 19.1 4.89998ZM16.4 18.9C15.1 19.7 13.6 20.2 12 20.2C10.5 20.2 9.1 19.8 7.8 19.1L7.5 18.9L4.4 19.7L5.2 16.7L5 16.4C2.6 12.4 3.8 7.39998 7.7 4.89998C11.6 2.39998 16.6 3.69998 19 7.49998C21.4 11.4 20.3 16.5 16.4 18.9Z" fill="#4A4A4A"/>
+            </svg>
+
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- ================= SLIDE ================= -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+  <!-- Indicadores -->
+  <div class="carousel-indicators custom-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+<div class="carousel-item active">
+  <picture>
+    <!-- Mobile -->
+    <source media="(max-width: 767px)" srcset="img/slide-bolsa-pq1.png">
+    
+    <!-- Desktop -->
+    <img src="img/slide-bolsa1.png" class="d-block w-100" alt="Bolsa estilosa">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source media="(max-width: 767px)" srcset="img/slide-bolsa-pq2.png">
+    <img src="img/slide-bolsa2.png" class="d-block w-100" alt="bolsa feminina para o dia a dia">
+  </picture>
+</div>
+
+<div class="carousel-item">
+  <picture>
+    <source media="(max-width: 767px)" srcset="img/slide-bolsa-pq3.png">
+    <img src="img/slide-bolsa3.png" class="d-block w-100" alt="Bolsa feminina para passear com estilo">
+  </picture>
+</div>
+
+
+  </div>
+</div>
+
+<!-- ================= SECTION ABAIXO ================= -->
+<section class="info-section text-center">
+  <div class="container">
+    <h1>Bolsas femininas em couro legítimo</h1>
+    <p>
+      Aqui você encontra <b>bolsas femininas grandes, médias e pequenas</b>,
+      ideais para o trabalho, lazer ou eventos especiais.
+      Trabalhamos com bolsas que unem estilo, qualidade e funcionalidade.
+    </p>
+    <a href="catalogo.html" class="btn btn-outline-custom">Ver catálogo</a>
+  </div>
+</section>
+
+<!-- ================= SECTION HISTÓRIA ================= -->
+
+<section class="historia-section">
+  <div class="container">
+    <div class="row align-items-end">
+
+      <!-- Vídeo -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="video-wrapper">
+          <video 
+            class="video-historia"
+            autoplay 
+            muted 
+            loop 
+            playsinline>
+            <source src="img/video-jo-tavares-bolsas.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!-- Conteúdo -->
+      <div class="col-lg-6 d-flex flex-column align-items-center text-center">
+        <h2 class="titulo-historia">Jô Tavares Bolsas</h2>
+        <p class="paragrafo-historia">elegantes, sofisticadas e duráveis.</p>
+        <a href="Sobre.html" class="btn-historia">Conheça nossa história</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION BOLSAS ================= -->
+
+<section class="secao-bolsas">
+  <div class="container">
+    
+    <h2 class="text-center mb-5 titulo-bolsas">Bolsas</h2>
+
+    <div class="row">
+
+      <!-- CARD 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 produto-col" data-categoria="transversal eventos">
+        <div class="card card-produto h-100">
+          <img src="img/Bolsa-Paolla1.webp" class="card-img-top" alt="Bolsa Paolla">
+
+          <div class="card-body">
+            <h5 class="card-title">Bolsa Paolla</h5>
+
+            <div class="info-produto">
+              <p class="card-text">
+                Bolsa Feminina de Mão e Transversal em Couro Preta.
+              </p>
+              <span class="preco">R$ 586,89</span>
+            </div>
+
+            <div class="botoes">
+              <a href="Bolsa-Feminina-de-Mao-Transversal-em-Couro-Preta-Paolla.html" class="btn-detalhes">Detalhes</a>
+              <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 produto-col" data-categoria="diaadia">
+        <div class="card card-produto h-100">
+          <img src="img/Carteira-Feminina-Couro-Vermelha.webp" class="card-img-top" alt="Carteira Feminina">
+
+          <div class="card-body">
+            <h5 class="card-title">Carteira Feminina</h5>
+
+            <div class="info-produto">
+              <p class="card-text">
+                Oferece a perfeita combinação elegante.
+              </p>
+              <span class="preco">R$ 158,00</span>
+            </div>
+
+            <div class="botoes">
+              <a href="Carteira-Feminina-Couro-Vermelha.html" class="btn-detalhes">Detalhes</a>
+              <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 produto-col" data-categoria="transversal diaadia media">
+        <div class="card card-produto h-100">
+          <img src="img/Bolsa-Kauanna.webp" class="card-img-top" alt="Bolsa Kauana">
+
+          <div class="card-body">
+            <h5 class="card-title">Bolsa Kauana</h5>
+
+            <div class="info-produto">
+              <p class="card-text">
+                Bolsa Transversal Mão Média Couro.
+              </p>
+              <p class="preco">R$ 524,62</p>
+            </div>
+
+            <div class="botoes">
+              <a href="Bolsa-Transversal-Mao-Media-Couro-off-white-Kauanna.html" class="btn-detalhes">Detalhes</a>
+              <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 produto-col" data-categoria="tiracolo media">
+        <div class="card card-produto h-100">
+          <img src="img/Bolsa-Pollyanna1.webp" class="card-img-top" alt="Bolsa tiracolo e mão Pollyanna">
+
+          <div class="card-body">
+            <h5 class="card-title">Bolsa tiracolo e mão Pollyanna</h5>
+
+            <div class="info-produto">
+              <p class="card-text">
+                A Bolsa Tiracolo Média Couro é o acessório ideal para mulheres que valorizam elegância.
+              </p>
+              <span class="preco">R$ 552,54</span>
+            </div>
+
+            <div class="botoes">
+              <a href="Bolsa-tiracolo-e-mao-Pollyanna.html" class="btn-detalhes">Detalhes</a>
+              <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 produto-col" data-categoria="grande">
+        <div class="card card-produto h-100">
+          <img src="img/Bolsa-Giseli1.webp" class="card-img-top" alt="Bolsa Giseli">
+
+          <div class="card-body">
+            <h5 class="card-title">Bolsa Giseli</h5>
+
+            <div class="info-produto">
+              <p class="card-text">
+                A Bolsa de Mão Estruturada Couro  croco Giseli é  perfeita para quem precisa de espaço e organização.
+              </p>
+              <span class="preco">R$ 665,00</span>
+            </div>
+
+            <div class="botoes">
+              <a href="Bolsa-de-Mao-Estruturada-Couro-croco-Giseli.html" class="btn-detalhes">Detalhes</a>
+              <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 produto-col" data-categoria="media diaadia">
+        <div class="card card-produto h-100">
+          <img src="img/Bolsa-Neuza1.webp" class="card-img-top" alt="Bolsa Neuza">
+
+          <div class="card-body">
+            <h5 class="card-title">Bolsa Neuza</h5>
+
+            <div class="info-produto">
+              <p class="card-text">
+                A Bolsa Média de Ombro Couro é a escolha perfeita para quem valoriza elegância e praticidade no dia a dia. 
+              </p>
+              <p class="preco">R$ 549,09</p>
+            </div>
+
+            <div class="botoes">
+              <a href="Bolsa-Media-de-Ombro-Couro-Caramelo-Neuza-Classic.html" class="btn-detalhes">Detalhes</a>
+              <a href="#" class="btn-comprar">Comprar</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="catalogo.html" class="btn-ver-mais">VER MAIS</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECTION DESTAQUE ================= -->
+
+<section class="secao-destaque">
+  <div class="container">
+    <div class="row align-items-stretch">
+
+      <!-- Vídeo -->
+      <div class="col-lg-6">
+        <video class="video-destaque" autoplay muted loop playsinline>
+          <source src="img/video-bolsa-jo.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Coluna direita -->
+      <div class="col-lg-6 coluna-direita">
+
+        <div class="topo-bolsas">
+          <img src="img/bolsa-pochete-jo-couro-legitimo1.webp" alt="">
+          <img src="img/bolsa-pochete-jo-couro-legitimo2.png" alt="">
+        </div>
+
+        <div class="bottom-texto">
+          <h2 class="titulo-historia">Bolsa Pochete Jô<br>Couro legítimo</h2>
+          <p class="paragrafo-historia">Com Alça Transversal Corrente</p>
+          <a href="Bolsa-Pochete-Jo-Couro-legitimo.html" class="btn-historia">DETALHES</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SECTION ESTILO ================= -->
+
+<section class="secao-estilos">
+  <div class="container">
+
+    <h2 class="titulo-estilos text-center mb-5">
+      Bolsas femininas para todos os estilos
+    </h2>
+
+    <!-- CARD 1 -->
+    <div class="card-estilo mb-5 esquerda">
+      <div class="row g-0 align-items-center">
+
+        <div class="col-md-5">
+          <img src="img/modelo-com-bolsa-paolla.png" class="img-estilo" alt="">
+        </div>
+
+        <div class="col-md-7">
+          <div class="conteudo-estilo">
+            <h4>Bolsa Feminina de Mão e Transversal em Couro Preta Paolla</h4>
+            <p>
+              É a escolha perfeita para mulheres que buscam estilo e funcionalidade em um único acessório.
+              Confeccionada em couro legítimo, esta bolsa oferece versatilidade de ser usada tanto no
+              ombro quanto de forma transversal, se adaptando ao seu estilo e às suas necessidades diárias.
+            </p>
+            <a href="Bolsa-Feminina-de-Mao-Transversal-em-Couro-Preta-Paolla.html" class="btn-estilo">DETALHES</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card-estilo mb-5 direita">
+      <div class="row g-0 align-items-center">
+
+        <div class="col-md-5">
+          <img src="img/carteira-vanesa5.JPG" class="img-estilo" alt="">
+        </div>
+
+        <div class="col-md-7">
+          <div class="conteudo-estilo">
+            <h4>Carteira Média Fecho Couro Vanessa</h4>
+            <p>
+                É ideal para mulheres que valorizam elegância, segurança e funcionalidade. Produzida em couro legítimo com textura sofisticada, essa carteira oferece acabamento refinado e design moderno com fecho metálico que garante charme e praticidade ao acessório.
+            </p>
+            <a href="carteira-media-fecho-couro-vanessa.html" class="btn-estilo">DETALHES</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card-estilo mb-5 esquerda">
+      <div class="row g-0 align-items-center">
+
+        <div class="col-md-5">
+          <img src="img/modelo-bolsa-ana-carolina.png" class="img-estilo" alt="">
+        </div>
+
+        <div class="col-md-7">
+          <div class="conteudo-estilo">
+            <h4>Bolsa em Couro Legítimo Prata Ana Carolina</h4>
+            <p>
+              A bolsa feminina em couro legítimo prata é a escolha ideal para mulheres que buscam estilo,
+              sofisticação e versatilidade em um único acessório.
+              Design atemporal, ela traz elegância sem exageros, valorizando produções do dia a dia e ocasiões especiais.
+            </p>
+            <a href="Bolsa-Ana-Carolina-couro-legitimo.html" class="btn-estilo">DETALHES</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+        <!-- CARD 4 -->
+    <div class="card-estilo mb-5 direita">
+      <div class="row g-0 align-items-center">
+
+        <div class="col-md-5">
+          <img src="img/bolsa-beca5.JPG" class="img-estilo" alt="Bolsa Feminina Clutch Pequena Couro off white Classic  Beca">
+        </div>
+
+        <div class="col-md-7">
+          <div class="conteudo-estilo">
+            <h4>Bolsa Feminina Clutch Pequena Couro off white Classic Beca</h4>
+            <p>
+              A Bolsa Feminina Clutch Pequena Couro off white Classic  Beca é o acessório ideal para mulheres que buscam sofisticação e estilo em ocasiões especiais. Feita em couro legítimo, essa clutch oferece um design compacto, porém funcional, com espaço suficiente para carregar seus itens essenciais com praticidade.
+            </p>
+            <a href="Bolsa-Feminina-Clutch-Pequena-Couro-Beca.html" class="btn-estilo">DETALHES</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="card-estilo mb-5 esquerda">
+      <div class="row g-0 align-items-center">
+
+        <div class="col-md-5">
+          <img src="img/bolsa-paris5.JPG" class="img-estilo" alt="Clutch Off White Classic Beca">
+        </div>
+
+        <div class="col-md-7">
+          <div class="conteudo-estilo">
+            <h4>Bolsa Transversal Tote Matelasse Couro Preta Média Paris</h4>
+            <p>
+              Bolsa Transversal Tote Matelasse Couro Preta Média Paris, se adapta facilmente ao seu estilo, podendo ser utilizada como bolsa de mão ou bolsa de ombro, graças à sua alça removível. Ela conta com seis compartimentos, incluindo um bolso lateral e um externo, proporcionando organização e praticidade no dia a dia.
+            </p>
+            <a href="Bolsa-Transversal-Tote-Matelasse-Couro-Preta-Media-Paris.html" class="btn-estilo">DETALHES</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="card-estilo direita">
+      <div class="row g-0 align-items-center">
+
+        <div class="col-md-5">
+          <img src="img/bolsa-giseli5.JPG" class="img-estilo" alt="Bolsa de Mão Estruturada Couro croco Giseli ">
+        </div>
+
+        <div class="col-md-7">
+          <div class="conteudo-estilo">
+            <h4>Bolsa de Mão Estruturada Couro croco Giseli</h4>
+            <p>
+              A Bolsa de Mão Estruturada Couro  croco Giseli é perfeita para quem precisa de espaço e organização. Seu interior espaçoso comporta celulares, carteiras, tablets pequenos, necessaires e outros itens do dia a dia.
+            </p>
+            <a href="Bolsa-de-Mao-Estruturada-Couro-croco-Giseli.html" class="btn-estilo">DETALHES</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECTION DEPOIMENTOS ================= -->
+
+<section class="secao-instagram">
+  <div class="container">
+
+    <h2 class="titulo-instagram text-center mb-5">
+      Quem usa, aprova as Bolsas <br> Jó Tavares
+    </h2>
+
+    <div class="row justify-content-center">
+
+      <!-- VIDEO 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 insta-col">
+        <div class="card-instagram">
+          <blockquote 
+            class="instagram-media" 
+            data-instgrm-permalink="https://www.instagram.com/p/DM6SMICseti/"
+            data-instgrm-version="14"
+            style="width:100%;">
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- VIDEO 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 insta-col">
+        <div class="card-instagram">
+          <blockquote 
+            class="instagram-media" 
+            data-instgrm-permalink="https://www.instagram.com/p/DM9Jajesoyc/"
+            data-instgrm-version="14"
+            style="width:100%;">
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- VIDEO 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 insta-col">
+        <div class="card-instagram">
+          <blockquote 
+            class="instagram-media" 
+            data-instgrm-permalink="https://www.instagram.com/p/DMvJTRHM_0I/"
+            data-instgrm-version="14"
+            style="width:100%;">
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- VIDEO 4 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 insta-col">
+        <div class="card-instagram">
+          <blockquote 
+            class="instagram-media" 
+            data-instgrm-permalink="https://www.instagram.com/p/DMyehISvuyi/"
+            data-instgrm-version="14"
+            style="width:100%;">
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- VIDEO 5 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 insta-col">
+        <div class="card-instagram">
+          <blockquote 
+            class="instagram-media" 
+            data-instgrm-permalink="https://www.instagram.com/p/DNBnaMev0NM/"
+            data-instgrm-version="14"
+            style="width:100%;">
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- VIDEO 6 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4 insta-col">
+        <div class="card-instagram">
+          <blockquote 
+            class="instagram-media" 
+            data-instgrm-permalink="https://www.instagram.com/p/DNRbbzkh_BW/"
+            data-instgrm-version="14"
+            style="width:100%;">
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="text-ver-mais">Veja mais em nosso instagram</p>
+      <a class="link-insta" href="https://www.instagram.com/jotavaresbolsas/" target="_blank">@jotavaresbolsas</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECTION VER CATALOGO ================= -->
+
+<section class="secao-catalogo">
+  <div class="container">
+
+    <div class="row align-items-center text-center text-md-start">
+
+      <!-- TEXTO -->
+      <div class="col-12 col-md-8 mb-3 mb-md-0">
+        <p class="texto-catalogo mb-0">
+          Veja nosso catálogo completo de bolsas femininas
+        </p>
+      </div>
+
+      <!-- BOTÃO -->
+      <div class="col-12 col-md-4 text-center text-md-end">
+        <a href="catalogo.html" class="btn btn-catalogo">
+          CATÁLOGO
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECTION FAQ ================= -->
+
+<section class="secao-faq">
+  <div class="container">
+
+    <h2 class="titulo-faq text-center mb-5">
+      Perguntas Frequentes
+    </h2>
+
+    <div class="accordion faq-accordion" id="faqAccordion">
+
+      <!-- ITEM 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq1">
+            1. As bolsas são de couro legítimo?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sim. Todas as bolsas Jó Tavares são produzidas em couro legítimo de alta qualidade,
+            selecionado para garantir durabilidade, acabamento refinado e sofisticação em cada peça.
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq2">
+            2. Vocês entregam para todo o Brasil?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sim, realizamos entregas para todo o território nacional com segurança e agilidade.
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq3">
+            3. Como funciona a compra das bolsas?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            As compras são realizadas diretamente pelo nosso WhatsApp. Basta escolher o modelo desejado e entrar em contato para receber atendimento personalizado e finalizar seu pedido com segurança.
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq4">
+            4. O acabamento das bolsas é realmente diferenciado?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sim. Cada peça é cuidadosamente produzida com atenção aos detalhes,
+            garantindo sofisticação e exclusividade.
+          </div>
+        </div>
+      </div>
+
+      <!-- ITEM 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#faq5">
+            5. A bolsa é resistente ao uso diário?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Sim. As bolsas são desenvolvidas para uso diário, unindo resistência,
+            conforto e elegância.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ENTREGAS ================= -->
+
+<section class="entregas-whatsapp">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <h2>Atendimento e Entregas para Todo o Brasil</h2>
+      <p>
+        Todas as compras são finalizadas de forma rápida e segura através do nosso
+        atendimento exclusivo via WhatsApp. Nossa equipe está pronta para
+        tirar dúvidas, confirmar estoque e garantir um atendimento personalizado.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="box-info">
+          <h3>📦 Entregamos para todo o Brasil</h3>
+          <p>
+            Realizamos envios para todas as regiões:
+            Norte, Nordeste, Centro-Oeste, Sudeste e Sul.
+            Trabalhamos com envio rastreável e seguro.
+          </p>
+
+          <ul>
+            <li>São Paulo (SP)</li>
+            <li>Rio de Janeiro (RJ)</li>
+            <li>Minas Gerais (MG)</li>
+            <li>Paraná (PR)</li>
+            <li>Santa Catarina (SC)</li>
+            <li>Rio Grande do Sul (RS)</li>
+            <li>E outros estados</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="box-info destaque-whats">
+          <h3>💬 Compra via WhatsApp</h3>
+          <p>
+            Ao clicar em <strong>Comprar</strong>, você será direcionada
+            para nosso WhatsApp oficial, onde finalizamos seu pedido
+            com total segurança.
+          </p>
+
+          <ul>
+            <li>Atendimento rápido</li>
+            <li>Suporte personalizado</li>
+            <li>Envio de código de rastreio</li>
+            <li>Pagamento seguro</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SECTION MODAL ================= -->
+
+<div id="modal-whatsapp" class="modal-whats">
+  <div class="modal-conteudo">
+    
+    <span class="fechar-modal">&times;</span>
+
+    <h4>Finalizar compra via WhatsApp</h4>
+
+    <p>
+      Você será atendida diretamente pelo nosso time via WhatsApp.
+      Garantimos um atendimento rápido, seguro e personalizado
+      para finalizar seu pedido com total segurança.
+    </p>
+
+    <button id="continuar">Continuar para WhatsApp</button>
+
+  </div>
+</div>
+
+<!-- ================= SECTION FOOTER ================= -->
+
+<footer class="footer-jo">
+  <div class="container">
+    <div class="row text-center text-md-left">
+
+      <!-- LOGO -->
+      <div class="col-12 col-md-3 mb-4 mb-md-0">
+        <div class="footer-logo">
+          <div class="mb-2">
+            <img src="img/logo-jo-tavares-bolsas.png" alt="Jô Tavares Bolsas">
+          </div>
+        </div>
+      </div>
+
+      <!-- INSTITUCIONAL -->
+      <div class="col-12 col-md-3 mb-4 mb-md-0">
+        <h5 class="footer-titulo">Institucional</h5>
+        <ul class="footer-links list-unstyled">
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="catalogo.html">Catálogo de bolsas</a></li>
+          <li><a href="Sobre.html">Sobre a empresa</a></li>
+          <li><a href="Contatos.html">Tire suas dúvidas</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTATO -->
+      <div class="col-12 col-md-3 mb-4 mb-md-0">
+        <h5 class="footer-titulo">Contato</h5>
+        <p><strong>Telefones:</strong> (65) 99307-3682</p>
+        <p><strong>E-mail:</strong> contatojoselice@gmail.com</p>
+      </div>
+
+      <!-- REDES SOCIAIS -->
+      <div class="col-12 col-md-3">
+        <h5 class="footer-titulo">Redes Sociais</h5>
+
+        <div class="redes-icons">
+
+          <a href="https://www.instagram.com/jotavaresbolsas/" class="icon-social" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 11.3703C16.1234 12.2025 15.9812 13.0525 15.5937 13.7993C15.2062 14.5461 14.5931 15.1517 13.8416 15.53C13.0901 15.9082 12.2384 16.0399 11.4077 15.9062C10.5771 15.7726 9.80971 15.3804 9.21479 14.7855C8.61987 14.1905 8.22768 13.4232 8.09402 12.5925C7.96035 11.7619 8.09202 10.9102 8.47028 10.1587C8.84854 9.40716 9.45414 8.79404 10.2009 8.40654C10.9477 8.01904 11.7977 7.87689 12.63 8.0003C13.4789 8.12619 14.2648 8.52176 14.8716 9.12861C15.4785 9.73545 15.8741 10.5214 16 11.3703Z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 6.5H17.51" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+          </a>
+
+          <a href="https://wa.me/65993073682" class="icon-social" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6 13.9996C16.4 13.8996 15.1 13.2996 14.9 13.1996C14.7 13.0996 14.5 13.0996 14.3 13.2996C14.1 13.4996 13.7 14.0996 13.5 14.2996C13.4 14.4996 13.2 14.4996 13 14.3996C12.3 14.0996 11.6 13.6996 11 13.1996C10.5 12.6996 10 12.0996 9.6 11.4996C9.5 11.2996 9.6 11.0996 9.7 10.9996C9.8 10.8996 9.9 10.6996 10.1 10.5996C10.2 10.4996 10.3 10.2996 10.3 10.1996C10.4 10.0996 10.4 9.89961 10.3 9.79961C10.2 9.69961 9.7 8.49961 9.5 7.99961C9.4 7.29961 9.2 7.29961 9 7.29961C8.9 7.29961 8.7 7.29961 8.5 7.29961C8.3 7.29961 8 7.49961 7.9 7.59961C7.3 8.19961 7 8.89961 7 9.69961C7.1 10.5996 7.4 11.4996 8 12.2996C9.1 13.8996 10.5 15.1996 12.2 15.9996C12.7 16.1996 13.1 16.3996 13.6 16.4996C14.1 16.6996 14.6 16.6996 15.2 16.5996C15.9 16.4996 16.5 15.9996 16.9 15.3996C17.1 14.9996 17.1 14.5996 17 14.1996C17 14.1996 16.8 14.0996 16.6 13.9996ZM19.1 4.89961C15.2 0.999609 8.9 0.999609 5 4.89961C1.8 8.09961 1.2 12.9996 3.4 16.8996L2 21.9996L7.3 20.5996C8.8 21.3996 10.4 21.7996 12 21.7996C17.5 21.7996 21.9 17.3996 21.9 11.8996C22 9.29961 20.9 6.79961 19.1 4.89961ZM16.4 18.8996C15.1 19.6996 13.6 20.1996 12 20.1996C10.5 20.1996 9.1 19.7996 7.8 19.0996L7.5 18.8996L4.4 19.6996L5.2 16.6996L5 16.3996C2.6 12.3996 3.8 7.39961 7.7 4.89961C11.6 2.39961 16.6 3.69961 19 7.49961C21.4 11.3996 20.3 16.4996 16.4 18.8996Z" fill="#4A4A4A"/>
+</svg>
+
+          </a>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Script obrigatório do Instagram -->
+<script src="//www.instagram.com/embed.js"></script>
+
+</body>
+</html>
+
